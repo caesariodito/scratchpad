@@ -6,3 +6,5 @@ print("gekko kek cucok")
 
 
 print("reyna ckp bgt")
+
+print("sage ckp bgt")
