@@ -12,3 +12,5 @@ print("sage ckp bgt")
 print("omen ckp bgt")
 
 print("zhongli suami saya")
+
+print("xiao ganteng banget")
