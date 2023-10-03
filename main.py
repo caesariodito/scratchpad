@@ -11,4 +11,4 @@ print("sage ckp bgt")
 
 print("omen ckp bgt")
 
-print("reja suka ngebom")
+print("zhongli suami saya")
