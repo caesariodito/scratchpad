@@ -18,7 +18,7 @@ class Graph:
         self.edges[to_node].append((from_node, distance))
 
 
-def astar(graph, graph_baru, start, goal):
+def astar(graph, start, goal):
     open_set = []
     heapq.heappush(open_set, (0, start, []))
     closed_set = set()
@@ -52,8 +52,7 @@ def astar(graph, graph_baru, start, goal):
         # ngecek tetangga
         for neighbor, distance in graph.edges[current]:
             if neighbor not in closed_set:
-                h = graph_baru.edges[neighbor]
-                heapq.heappush(open_set, ((cost + distance) + h, neighbor, path))
+                heapq.heappush(open_set, (cost + distance, neighbor, path))
 
     return None
 
@@ -84,7 +83,6 @@ city_map.add_edge("E", "H", 106)
 city_map.add_edge("E", "I", 80)
 city_map.add_edge("F", "I", 43)
 city_map.add_edge("G", "J", 27)
-
 
 
 # Meminta input dari pengguna
